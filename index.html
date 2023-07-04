@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <center>
+        
+        <h3>My Public IP ADDRESS:</h3>
+        <p id="gfg"></p>
+        <button id="fetch_data">Get Data</button>
+ 
+    </center>
+    <div>
+        <table id="tb">
+            
+            <tr>
+              <td>Lat:</td>
+              <td id = "lat"></td>
+            </tr>
+            <tr>
+              <td>Long:</td>
+              <td id = "long"></td>
+            </tr>
+            <tr>
+              <td>City:</td>
+              <td id = "city"></td>
+            </tr>
+            <tr>
+                <td>Region:</td>
+                <td id = "region"></td>
+              </tr>
+              <tr>
+                <td>Organisation:</td>
+                <td id = "organisation"></td>
+              </tr>
+              <tr>
+                <td>Hostname:</td>
+                <td id = "hostname"></td>
+              </tr>
+          
+     </table>
+
+     <iframe src="https://maps.google.com/maps?q=27.1766701, 78.0080745&&output=embed" width="500" height="250" frameborder="0" style="border:0"></iframe><br>
+     <table >
+            
+        <tr>
+          <td>Time Zone:</td>
+          <td id = "timezone"></td>
+        </tr>
+        <tr>
+          <td>Date and Time:</td>
+          <td id = "datetime"></td>
+        </tr>
+        <tr>
+          <td>Pincode:</td>
+          <td id = "pincode"></td>
+        </tr>
+        
+      
+    </table>
+<input type="text" id="pincode" placeholder="Filter" >
+<button>Check</button><br>
+<div id="result"><p id="res_msg">
+
+</p>
+    <br>
+    <ul id="result_data"></ul>
+</div>
+
+</div>
+        
+    
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
